@@ -10,11 +10,11 @@ int main(void){
     printf("voce gosta de algoritmo? \n 0 - TRUE \n 1 - FALSE\n");
     scanf("%d", &res);
 
-    if(res === TRUE){
+    if(res == TRUE){
         printf("Boa escolha");
     } 
 
-    else if(res === FALSE){
+    else if(res == FALSE){
         printf("Que pena..");
     }
         

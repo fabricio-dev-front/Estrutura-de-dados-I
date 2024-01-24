@@ -1,24 +1,23 @@
 #include <stdio.h>
-#include <stdio.h>
 
 // ENUMERAÇÃO //
 enum novo_modo{
-    true;
-    false;
+    VERDADEIRO,
+    FALSO
 }novo;
 
 int main(void){
     // nova forma de estrutura //
-    novo resposta;
+    enum novo_modo resposta;
 
     printf("voce gosta de algoritmo? \n 0 - TRUE \n 1 - FALSE\n");
     scanf("%d", &resposta);
 
-    if(resposta === TRUE){
+    if(resposta == VERDADEIRO){
         printf("Boa escolha");
     } 
 
-    else if(resposta === FALSE){
+    else if(resposta == FALSO){
         printf("Que pena");
     }
         

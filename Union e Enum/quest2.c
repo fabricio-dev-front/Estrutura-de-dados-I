@@ -25,10 +25,10 @@ void inplementarDdos(expec *dados){
     scanf(" %[^\n]", dados->nome);
     
     printf("Informe o preco:");
-    scanf("%f", dados->preco);
+    scanf("%f", &(dados->preco));
     
     printf("Informe o tipo (0 - Alimento, 1 - bebida e 2 - eletronico):");
-    scanf("%d", (int*)&(dados->tipo));
+    scanf("%d", (int*)&(dados->TipoProduto));
 
     switch (dados->TipoProduto){
     case ALIMENTO:
@@ -62,7 +62,7 @@ void mostrar_dados(expec *dados){
         printf("Tipo: Bebida %s\n", dados->tipo.Bebida);
         break;
     case ELETRONICO:
-        printf("Tipo: Alimento %s\n", dados->tipo.Eletromico);
+        printf("Tipo: Eletronico %s\n", dados->tipo.Eletromico);
         break;
     default:
         printf("ERRO!!\n");

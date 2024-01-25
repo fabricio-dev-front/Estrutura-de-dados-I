@@ -57,7 +57,7 @@ int main(void){
         exit(1);
     } 
     printf("digite seu nome:\n");
-    scanf("%[^\n]s", nome);
+    scanf(" %[^\n]s", nome);
 
     free(nome);
     

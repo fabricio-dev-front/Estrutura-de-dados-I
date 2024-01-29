@@ -1,0 +1,11 @@
+um arquivo pode ser visto de duas maneiras:
+- modo texto
+- modo binário
+
+função básica para abrir um arquivo:
+FILE* foden (char* nome_arquivo, char* modo);
+
+função para ler dados:
+- int fscanf (FILE* pf, char* formato, ...);
+- int fgetc (FILE* fp);
+- char* fgets (char* s, int n, FILE* fp);
